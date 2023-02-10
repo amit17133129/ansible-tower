@@ -1,7 +1,7 @@
 - hosts: "44.205.1.201"
   tasks:
   - yum: 
-       name: "Installing httpd"
+       name: "httpd"
        state: "present"
        
   - copy:
