@@ -1,0 +1,9 @@
+- hosts: "44.205.1.201"
+  tasks: 
+    - yum: 
+        name: "php"
+        state: "present"
+        
+    - service: 
+        name: "php"
+        state: "started"
