@@ -1,5 +1,4 @@
 - hosts: "44.205.1.201"
-  var: "software_name"
   tasks: 
     - yum: 
         name: "{{ software_name }}"
