@@ -1,9 +1,8 @@
 - hosts: "44.205.1.201"
+  var: "software_name"
   tasks: 
     - yum: 
-        name: "php"
+        name: "{{ software_name }}"
         state: "present"
         
-    - service: 
-        name: "php"
-        state: "started"
+
