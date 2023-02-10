@@ -1,0 +1,13 @@
+- hosts: "localhost"
+  tasks:
+  - yum: 
+       name: "Installing httpd"
+       state: "present"
+       
+  - copy:
+       content: "Hello Ansible Tower"
+       dest: "/var/www/html/index.html"
+          
+  - service: 
+       name: "httpd"
+       state: "restarted"
